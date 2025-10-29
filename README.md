@@ -71,7 +71,7 @@ The system aims to reduce manual paperwork, minimize human error, and ensure qui
 
 Here’s a preview of the **Appointments Page** from the Clinic TPS System:
 
-![Clinic System Appointments Page](image/Clinic .png)
+![Clinic System Screenshot](./Clinic.png)
 
 ## Contributors Garcia Jasmin M. , Bernal Yhoebe Rae 
 
