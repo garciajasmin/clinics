@@ -51,7 +51,7 @@ The system aims to reduce manual paperwork, minimize human error, and ensure qui
 
 ## Usage
 **How to Access**: open your localhost to access the website
-! [Clinic TPS](http://localhost/patient)
+! [Clinic TPS](http://127.0.0.1:8000/patients)
 
 ### For Patients:
 - Click Patients on the sidebar.
@@ -67,14 +67,24 @@ The system aims to reduce manual paperwork, minimize human error, and ensure qui
 - Use View, Edit, or Delete buttons to manage each record.
 
 ## Code Snippet
-## 🖼 Screenshot
+Here’s an example PHP code snippet showing how appointments are displayed in the Clinic TPS system:
+// Fetch all appointments from the database
+include 'db_connection.php';
+$query = "SELECT * FROM appointments";
+$result = mysqli_query($conn, $query);
+?>
+<img width="1529" height="821" alt="Screenshot 2025-10-29 115525" src="https://github.com/user-attachments/assets/7eb7514c-cf02-4542-91d5-36ae8c24eba2" />
+
+## Screenshot
 
 Here’s a preview of the **Appointments Page** from the Clinic TPS System:
-
-![Clinic System Screenshot](./Clinic.png)
+<img width="1919" height="899" alt="Clinic " src="https://github.com/user-attachments/assets/12c3cbd3-af1f-4433-855c-c41da823c2a6" />
 
 ## Contributors Garcia Jasmin M. , Bernal Yhoebe Rae 
 
 ## License
-- This project is for educational purposes only and not intended for commercial distribution.
-- © 2025 Jasmin Garcia. All rights reserved.
+
+This project is developed as part of a **Midterm Examination** in **ITPC 115: SYSTEM INTEGRATION AND ARCHITECTURE 2**for academic purposes under the course requirements.  
+It is intended **for educational use only** and not for commercial distribution or deployment.  
+
+© 2025 Garcia Jasmin M. — All Rights Reserved.
