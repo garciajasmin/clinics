@@ -66,15 +66,44 @@ The system aims to reduce manual paperwork, minimize human error, and ensure qui
 - View scheduled, canceled, or completed appointments from the list.
 - Use View, Edit, or Delete buttons to manage each record.
 
-## Code Snippet
-Here’s an example PHP code snippet showing how appointments are displayed in the Clinic TPS system:
-// Fetch all appointments from the database
+###Code Snippet##
+**Here’s an example PHP code snippet showing how appointments are displayed in the Clinic TPS system:**
+```bash
+<?php
 include 'db_connection.php';
 $query = "SELECT * FROM appointments";
 $result = mysqli_query($conn, $query);
 ?>
-<img width="1529" height="821" alt="Screenshot 2025-10-29 115525" src="https://github.com/user-attachments/assets/7eb7514c-cf02-4542-91d5-36ae8c24eba2" />
 
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Patient</th>
+      <th>Scheduled</th>
+      <th>Reason</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php while($row = mysqli_fetch_assoc($result)) { ?>
+    <tr>
+      <td><?= $row['id']; ?></td>
+      <td><?= $row['patient_name']; ?></td>
+      <td><?= $row['scheduled']; ?></td>
+      <td><?= $row['reason']; ?></td>
+      <td><?= $row['status']; ?></td>
+      <td>
+        <button>View</button>
+        <button>Edit</button>
+        <button>Delete</button>
+      </td>
+    </tr>
+    <?php } ?>
+  </tbody>
+</table>
+```
 ## Screenshot
 
 Here’s a preview of the **Appointments Page** from the Clinic TPS System:
