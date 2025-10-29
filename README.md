@@ -66,7 +66,8 @@ The system aims to reduce manual paperwork, minimize human error, and ensure qui
 - View scheduled, canceled, or completed appointments from the list.
 - Use View, Edit, or Delete buttons to manage each record.
 
-###Code Snippet##
+### Code Snippet:
+
 **Here’s an example PHP code snippet showing how appointments are displayed in the Clinic TPS system:**
 ```bash
 <?php
@@ -108,7 +109,8 @@ $result = mysqli_query($conn, $query);
 
 Here’s a preview of the **Appointments Page** from the Clinic TPS System:
 <img width="1919" height="899" alt="Clinic " src="https://github.com/user-attachments/assets/12c3cbd3-af1f-4433-855c-c41da823c2a6" />
-
+Allows clinic staff to view, add, or edit appointment schedules.
+Each record includes patient name, reason, date/time, and current appointment status.
 ## Contributors Garcia Jasmin M. , Bernal Yhoebe Rae 
 
 ## License
